@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will you be my valentine?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="hearts-bg" aria-hidden="true">
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+  </div>
+
+  <main class="page">
+    <section class="card" id="card">
+      <h1 class="card-title">Will you be my valentine?</h1>
+      <div class="buttons-wrap" id="buttons-wrap">
+        <button type="button" class="btn btn-yes" id="btn-yes">Yes</button>
+        <button type="button" class="btn btn-no" id="btn-no">No</button>
+      </div>
+    </section>
+
+    <section class="success" id="success" hidden>
+      <p class="success-text">Ohh yeah!</p>
+      <div class="success-gif-wrap">
+        <img src="https://media.giphy.com/media/26u4cqiYI30juCOGY/giphy.gif" alt="Celebration" class="success-gif">
+      </div>
+      <p class="success-sub">You made my day ♥</p>
+    </section>
+  </main>
+
+  <div class="modal" id="gimmick-modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-box">
+      <h2 class="modal-title" id="modal-title">Processing...</h2>
+      <div id="modal-content">
+        <div class="progress-wrap" id="progress-wrap" hidden>
+          <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+          <p class="progress-status" id="progress-status"></p>
+        </div>
+        <p class="countdown-text" id="countdown-text" hidden></p>
+        <div class="sure-modal-actions" id="sure-modal-actions" hidden>
+          <button type="button" class="btn btn-modal btn-sure" id="modal-btn-sure">Sure</button>
+          <button type="button" class="btn btn-modal btn-cancel" id="modal-btn-cancel">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="gimmicks.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
